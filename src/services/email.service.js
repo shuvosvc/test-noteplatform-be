@@ -14,6 +14,9 @@ const createTransporter = () => {
       user: environment.SMTP_USER,
       pass: environment.SMTP_PASS,
     },
+    tls: {
+      rejectUnauthorized: false,
+    },
   });
 };
 
