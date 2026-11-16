@@ -31,8 +31,11 @@ const sendPasswordResetEmail = async ({ to, resetToken }) => {
     };
   }
 
+  const fromAddress = environment.SMTP_FROM || environment.SMTP_USER;
+  const fromName = environment.SMTP_FROM_NAME || 'Note Platform';
+
   const mailOptions = {
-    from: `"Note Platform" <${environment.SMTP_USER}>`,
+    from: `"${fromName}" <${fromAddress}>`,
     to,
     subject: 'Password Reset Request - Note Platform',
     html: `
