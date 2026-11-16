@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to {{appName}}</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f1f5f9;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #0f172a;
+    }
+    .wrapper {
+      width: 100%;
+      background-color: #f1f5f9;
+      padding: 40px 16px;
+      box-sizing: border-box;
+    }
+    .card {
+      max-width: 580px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    .header {
+      background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
+      padding: 32px 32px;
+      text-align: center;
+    }
+    .brand-name {
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0;
+    }
+    .content {
+      padding: 36px 32px;
+      line-height: 1.6;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #0f172a;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    .text {
+      color: #334155;
+      font-size: 15px;
+      margin: 14px 0;
+    }
+    .cta-container {
+      text-align: center;
+      margin: 32px 0;
+    }
+    .cta-button {
+      background-color: #4f46e5;
+      color: #ffffff !important;
+      padding: 14px 32px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 8px;
+      display: inline-block;
+    }
+    .footer {
+      background-color: #f8fafc;
+      padding: 24px 32px;
+      text-align: center;
+      border-top: 1px solid #e2e8f0;
+      font-size: 13px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <div class="header">
+        <h1 class="brand-name">{{appName}}</h1>
+      </div>
+      <div class="content">
+        <h2 class="title">Welcome, {{userName}}!</h2>
+        <p class="text">Thank you for joining <strong>{{appName}}</strong>. We're excited to have you on board!</p>
+        <p class="text">You can now start creating notes, organizing thoughts by interests, and sharing posts across the platform.</p>
+        <div class="cta-container">
+          <a href="{{loginUrl}}" class="cta-button" target="_blank" rel="noopener noreferrer">Get Started</a>
+        </div>
+      </div>
+      <div class="footer">
+        &copy; {{year}} {{appName}}. All rights reserved.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

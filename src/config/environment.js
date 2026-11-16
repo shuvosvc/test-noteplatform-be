@@ -16,7 +16,7 @@ const environment = Object.freeze({
   SMTP_USER: process.env.SMTP_USER || process.env.SES_USER || process.env.MAIL_USER || '',
   SMTP_PASS: process.env.SMTP_PASS || process.env.SES_PASS || process.env.MAIL_PASS || '',
   SMTP_FROM: process.env.SMTP_FROM || process.env.SES_FROM || process.env.MAIL_FROM || 'no-reply@trialvo.com',
-  SMTP_FROM_NAME: process.env.SMTP_FROM_NAME || process.env.SES_FROM_NAME || 'Trialvo',
+  SMTP_FROM_NAME: process.env.SMTP_FROM_NAME || process.env.SES_FROM_NAME || 'Arafat',
   FRONTEND_URL: process.env.FRONTEND_URL || 'http://localhost:3000',
   RATE_LIMIT_WINDOW_MS: parseInt(process.env.RATE_LIMIT_WINDOW_MS || '900000', 10),
   RATE_LIMIT_MAX: parseInt(process.env.RATE_LIMIT_MAX || '100', 10),
